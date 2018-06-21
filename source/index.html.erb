@@ -1,9 +1,9 @@
 <div class="container">
   <div>
-    <ul class="collapsible">
+    <ul class="collapsible" style="box-shadow: none;">
       <li>
         <div class="collapsible-header"><i class="far fa-question-circle"></i><h3>About</h3></div>
-          <div class="collapsible-body card horizontal">
+          <div class="collapsible-body card horizontal" style="box-shadow: none;">
             <div class="card-stacked">
               <div class="card-content">
                 <div class="row">
@@ -31,7 +31,7 @@
   </div>
   <div class="row">
     <div class="col s12">
-      <ul class="tabs tabs-fixed-width tab-demo z-depth-1">
+      <ul class="tabs tabs-fixed-width tab-demo z-depth-1"  style="box-shadow: none;">
         <li class="tab col s3"><a href="#exp">Experience</a></li>
         <li class="tab col s3"><a href="#edu">Education</a></li>
         <li class="tab col s3"><a href="#skill">Skills</a></li>
@@ -39,7 +39,7 @@
       </ul>
     </div>
     <div id="exp" class="col s12" style="overflow: auto; max-height: 100vh;"><%= partial "experience" %></div>
-    <div id="edu" class="col s12"><%= partial "education" %></div>
+    <div id="edu" class="col s12" style="overflow: auto; max-height: 100vh;"><%= partial "education" %></div>
     <div id="skill" class="col s12"><%= partial "skills" %></div>
     <div id="interest" class="col s12"><%= partial "interests" %></div>
   </div>
