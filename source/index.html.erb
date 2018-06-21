@@ -1,0 +1,46 @@
+<div class="container">
+  <div>
+    <ul class="collapsible">
+      <li>
+        <div class="active collapsible-header"><i class="far fa-question-circle"></i><h3>About</h3></div>
+          <div class="collapsible-body card horizontal">
+            <div class="card-stacked">
+              <div class="card-content">
+                <div class="row">
+                  <div class="valign-wrapper">
+                    <div class="col s2"></div>
+                    <div class="col s6">
+                      <p>I am a 3rd year student at Epitech Paris.</p>
+                    </div>
+                    <div class="col s2">
+                      <%= image_tag('logo.png', style: "width:100%;") %>
+                    </div>
+                    <div class="col s2"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="card-action" style="display: flex; flex-direction: row; justify-content: space-between;">
+                <a href="mailto:raphael.beltrand@gmail.com">RAPHAEL.BELTRAND@GMAIL.COM</a>
+                <a>(+33)6.31.73.56.17</a>
+                <a>7 RUE BERTHOLLET, 75005 PARIS</a>
+              </div>
+            </div>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div class="row">
+    <div class="col s12">
+      <ul class="tabs tabs-fixed-width tab-demo z-depth-1">
+        <li class="tab col s3"><a href="#exp">Experience</a></li>
+        <li class="tab col s3"><a href="#edu">Education</a></li>
+        <li class="tab col s3"><a href="#skill">Skills</a></li>
+        <li class="tab col s3"><a href="#interest">Interests</a></li>
+      </ul>
+    </div>
+    <div id="exp" class="col s12" style="overflow: auto; max-height: 100vh;"><%= partial "experience" %></div>
+    <div id="edu" class="col s12"><%= partial "education" %></div>
+    <div id="skill" class="col s12"><%= partial "skills" %></div>
+    <div id="interest" class="col s12"><%= partial "interests" %></div>
+  </div>
+</div>
